@@ -11,5 +11,6 @@ rayon = sqrt(AB[0]**2+AB[1]**2) / 2
 
 IM = (simplify(x-I[0]), simplify(y-I[1]))
 
-print(IM)
-print(rayon**2)
+
+print("(" + str(IM[0]) + ")**2 " +
+      "+ (" + str(IM[1]) + ")**2" + " = " + str(rayon**2))

@@ -7,7 +7,6 @@ print(AB)
 I = ((A[0]+B[0])/2, (A[1]+B[1])/2)
 print(I)
 IM = (simplify(x-I[0]), simplify(y-I[1]))
-print(simplify(AB[0]*IM[0]+AB[1]*IM[1]))
-
-
-print("=0")
+eq  = simplify(AB[0]*IM[0]+AB[1]*IM[1])
+eq = str(eq).replace("*", "")
+print(f"{eq} = 0")
